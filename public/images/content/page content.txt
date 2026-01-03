@@ -1,0 +1,128 @@
+Page 1-Section 1:
+Bio: 
+•	Meriem Bensalloua is an educator, mentor, and data scientist who wants to make education and data science accessible to everyone. Driven by her enthusiasm and dream, she moved to the United States to continue her academic and professional journey. She arrived just as the COVID-19 crisis had reshaped the world. Despite the challenges, Meriem adapted quickly, leveraging online platforms to create meaningful remote learning experiences and mentorship opportunities for students and professionals alike. Her resilience and dedication have made her a beacon of innovation in education and data science.
+•	Meriem believes that data science is an elegant art that transforms messy, complex information into meaningful insights capable of telling powerful human stories. Her research explores how data can illuminate issues of equity and inclusion, including projects focused on COVID-19 and racial disparities in California’s four-year colleges.
+•	As a mentor and educator, she helps learners build confidence in mathematics, programming, and analytical thinking. Through her work, Meriem continues to inspire others to see data as more than just numbers—as stories that reveal both the beauty and complexity of the human experience.
+
+
+
+
+
+
+
+Page 3
+About me: 
+I love traveling and discovering the beauty of the universe — it’s the same feeling I get when exploring data science. Every journey, whether across the world or through data, reveals new patterns, stories, and connections waiting to be understood.
+🎓 Education
+•	M.S. in Discrete Mathematics and Optimization – University of Science and Technology Houari Boumediene (USTHB), Algeria
+•	B.S. in Statistics – University of Science and Technology Houari Boumediene (USTHB), Algeria
+•	Data Wrangling and Visualization Certificate – Cal Poly Pomona University, Spring 2022
+•	Teaching Assistant Program Certificate – Cerritos College, Fall 2021
+•	Mentor Training Certificate – Cerritos College, Spring 2021
+•	Data Science Certificate (in progress) – El Camino College, California
+
+
+
+Teaching & Mentoring
+•	Classroom management, lesson planning, curriculum design, and student evaluation
+•	Experience supporting diverse learners and fostering inclusive environments
+•	Peer tutoring, academic mentoring, and student success programs
+Data Science & Research
+•	Python, R, and Excel
+•	Data wrangling, visualization, and statistical modeling
+•	Machine learning basics (classification, regression, clustering)
+•	Data storytelling and analytical problem solving
+Professional Tools & Platforms
+•	Online teaching tools: Zoom, Google Workspace
+•	Texera Platform
+
+🏅 Certifications & Training
+•	Stanford University – Fundamentals of Data Science in Precision Medicine & Cloud Computing
+•	Cal Poly Pomona – Data Wrangling & Visualization Certificate
+•	Cerritos College – Teaching Assistant & Mentorship Certificates
+•	El Camino College – Data Science Certificate (in progress)
+
+Courses Taught
+•	Pre-Algebra, Algebra, and Calculus I – Designed to strengthen students’ mathematical foundations through problem-solving, collaboration, and application of real-world examples.
+•	Statistics and Probability for Data Science – Focused on statistical reasoning, data distribution, and inference using Python; helping students understand how data drives decision-making.
+•	Fundamentals of Data Science using Texera (Teaching Assistant, 2025 at El Camino College) – Supporting students in learning the foundations of data science through Texera, an interactive dataflow platform that builds confidence in programming, visualization, and analysis.
+•	Data Visualization and Communication – Teaching students how to transform data into clear, compelling visuals and stories that inform and inspire.
+
+Workshops & Professional Development
+•	Texera “Data Science for All” Workshop – University of California, Irvine (Summer 2025)
+Participated in an immersive hands-on training program introducing innovative approaches for teaching data science concepts using Texera.
+•	WiDS (Women in Data Science) Stanford Conference – Stanford University (2025)
+Engaged with global leaders and researchers to explore cutting-edge data science applications, equity in AI, and empowering women in technology and research.
+
+
+Page 2
+Tutoring services
+1-on- 1 tutoring
+
+1hour session ($60)
+ 
+•	Personalized, one-on-one instruction
+•	Focus on your chosen subject (Math • Python • R • Data Science)
+•	Problem-solving and guided practice
+•	Session summary and follow-up resources
+.
+	4-hour tutoring package
+            $199
+
+•	Four 1-hour tutoring sessions
+•	Custom learning plan for your goals
+•	Weekly progress tracking
+•	Q&A and feedback between sessions
+	Fully customized Plan
+Starting from $200
+
+•	Comprehensive assessment of your needs and goals
+•	Custom study plan and learning materials
+•	Ongoing mentorship and progress tracking
+•	Support in multiple areas (Math • Statistics • Python • R • Data Science)
+
+Data Science and machine learning services 
+Starter Plan — $200
+
+ 
+•	Introduction to Python or R for Data Science
+•	Help with data cleaning and visualization
+•	Support on small academic or personal projects
+•	2 personalized 1-on-1 sessions
+•	Feedback and resources for continued learning
+.
+	•	Pro Plan — $600
+
+•	Hands-on guidance through end-to-end data projects
+•	Support in machine learning algorithms (regression, classification, clustering)
+•	Project structure, evaluation, and optimization
+•	Up to 6 personalized sessions + progress tracking
+•	Access to templates, datasets, and learning materials
+	Custom Plan — starting at $1,500
+
+•	Deep-dive consulting or project mentorship
+•	Custom machine learning model development and evaluation
+•	Guidance in data storytelling and visualization for presentation
+•	Review of code, results, and final reporting
+•	Flexible session structure, ongoing communication, and project support
+
+Mentoring services
+2-Hour Mentorship — $80–$100
+ 
+•	Two 1-hour mentoring sessions
+•	Personalized academic or career guidance (Math • Data Science • Research Support)
+•	Q&A and action steps to help you move forward
+•	Follow-up email summary and resources
+	4-Hour Mentorship Package — $200–$250
+
+•	Four 1-hour mentoring sessions (flexible scheduling)
+•	Goal-setting and progress tracking
+•	Career and learning plan development
+•	Feedback on projects, resumes, or research ideas
+	12-Hour Mentorship Program — $550–$600
+
+•	Twelve 1-hour mentoring sessions
+•	Fully customized plan based on your goals
+•	Guidance in academic success, data science projects, and professional pathways
+•	Priority access to feedback, communication, and ongoing support
+

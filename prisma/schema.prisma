@@ -1,0 +1,43 @@
+// Client Portfolio Project: Survey Data Schema
+// Stack: Next.js (Weblo), Supabase, Prisma
+// Mapping Strategy: Strict Enums for strings, Raw Integers for codes.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Respondent {
+  id                     String    @id @default(cuid())
+  area                   String    // e.g., "San Francisco-Oakland-Berkeley"
+  birthYear              Int       @map("birth_year")
+  hispanic               String    // Keeping as String to preserve specific survey wording
+  race                   String    // Changed to String to prevent crashes if client data contains unseen race categories later
+  education              String    // Changed to String for safety with external client data
+  maritalStatus          String    @map("marital_status")
+  genderBirth            String    @map("gender_birth")
+  genderIdentity         String?   @map("gender_identity")  
+  
+  // Health Metrics
+  rsvVaccine             String?   @map("rsv_vaccine") // Input is "NA" or "Yes". String handles "NA" naturally without boolean conversion errors.
+  covidVaccine           String?   @map("covid_vaccine")
+  covidEver              String?   @map("covid_ever")
+  covidSymptoms          Int?      @map("covid_symptoms")
+  covidLong              String?   @map("covid_long")
+  
+  // Socio-Economic Metrics
+  householdIncome        Int?      @map("household_income") // Raw integer codes (4, 6, etc.) left as is.
+  employed               String    // "Employed", "Neither...", etc.
+  religiousAttendance    Int?      @map("religious_attendance") // Raw integer codes
+  difficultyWithExpenses Int?      @map("difficulty_with_expenses") // Raw integer codes
+  housing                String?   // "Rent", "Own", etc.
+  medicare               String?   // "Yes"/"No"
+  
+  createdAt              DateTime  @default(now())
+
+  @@map("respondents")
+}
