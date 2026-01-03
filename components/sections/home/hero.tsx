@@ -33,14 +33,14 @@ export function Hero() {
         <div className="absolute inset-0 flex flex-col items-center justify-center pt-10">
           <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-white overflow-hidden shadow-xl mb-6">
             <Image 
-              src="/assets/meriem-profile.png" 
+              src="/assets/meriem-profile2.png" 
               alt="Meriem Bensalloua" 
               fill
               className="object-cover"
             />
           </div>
           
-          <div className="bg-white/10 backdrop-blur-md border border-white/40 px-8 py-6 rounded-2xl shadow-2xl text-center max-w-4xl mx-4 ring-1 ring-black/5">
+          <div className="bg-white/7 backdrop-blur-md border border-white/40 px-8 py-6 rounded-2xl shadow-2xl text-center max-w-4xl mx-4 ring-1 ring-black/5">
             <h1 className="text-3xl md:text-5xl font-serif text-slate-900 mb-2 drop-shadow-sm">
               Meriem Bensalloua M.S. in Mathematics
             </h1>
