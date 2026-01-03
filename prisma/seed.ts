@@ -39,7 +39,7 @@ async function main() {
   const products = [
     // --- Tutoring Services ---
     {
-      name: '1-on-1 Tutoring',
+      name: '1-on-1-Tutoring',
       slug: '1-on-1-tutoring',
       category: 'Tutoring Services',
       description: 'Personalized, one-on-one instruction focusing on Math, Python, or R. Includes problem-solving and guided practice.',
@@ -49,7 +49,7 @@ async function main() {
       images: ['/images/content/meriem_2.png'] 
     },
     {
-      name: '4-hour Package',
+      name: '4-hour-Package',
       slug: '4-hour-tutoring',
       category: 'Tutoring Services',
       description: 'Four 1-hour sessions with a custom learning plan, weekly progress tracking, and feedback between sessions.',

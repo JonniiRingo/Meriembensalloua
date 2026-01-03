@@ -79,7 +79,7 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-            <Link href="/product/4-hour Package">
+            <Link href="/product/4-hour-tutoring">
               <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
                 Get Started
               </Button>
@@ -147,9 +147,11 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
-                Get Started
-              </Button>
+              <Link href="/product/data-science-starter">
+                <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
+                  Get Started
+                </Button>
+              </Link>
             </div>
 
             {/* DS Card 2: Pro-Package (Green Highlight) */}
@@ -173,9 +175,11 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
-                Get Started
-              </Button>
+              <Link href="/product/data-science-pro">
+                <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
+                  Get Started
+                </Button>
+              </Link>
             </div>
 
             {/* DS Card 3: Custom (Pink) */}
@@ -199,9 +203,11 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
-                Get Started
-              </Button>
+              <Link href="/product/data-science-consulting">
+                <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -239,9 +245,11 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
-                Get Started
-              </Button>
+              <Link href="/product/counseling-session">
+                <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
+                  Get Started
+                </Button>
+              </Link>
             </div>
 
             {/* Mentor Card 2: Advisor (Green Highlight) */}
@@ -265,9 +273,11 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
-                Get Started
-              </Button>
+              <Link href="/product/advisor-track">
+                <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
+                  Get Started
+                </Button>
+              </Link>
             </div>
 
             {/* Mentor Card 3: Mentor (Pink) */}
@@ -291,9 +301,11 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
-                Get Started
-              </Button>
+              <Link href="/product/mentor-partnership">
+                <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
