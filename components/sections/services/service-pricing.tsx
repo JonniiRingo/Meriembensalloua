@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -49,9 +50,12 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
+            <Link href="/product/math-tutoring">
               <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
                 Get Started
               </Button>
+            </Link>
+
             </div>
 
             {/* Card 2: 4-hour Package (Green - Highlighted) */}
