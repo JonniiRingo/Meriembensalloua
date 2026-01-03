@@ -50,7 +50,7 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-            <Link href="/product/math-tutoring">
+            <Link href="/product/1-on-1-tutoring">
               <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
                 Get Started
               </Button>
@@ -79,9 +79,11 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
+            <Link href="/product/4-hour Package">
               <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
                 Get Started
               </Button>
+            </Link>
             </div>
 
             {/* Card 3: Custom Plan (Pink) */}
