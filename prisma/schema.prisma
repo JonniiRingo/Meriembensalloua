@@ -11,6 +11,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// --- RESEARCH DATA ---
+
 model Respondent {
   id                     String    @id @default(cuid())
   area                   String    // e.g., "San Francisco-Oakland-Berkeley"
@@ -43,7 +45,7 @@ model Respondent {
 }
 
 
-// --- COMMERCE INTEGRATION ---
+// --- COMMERCE & SCHEDULING INTEGRATION ---
 
 model Product {
   id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
@@ -60,4 +62,33 @@ model Product {
   isFeatured  Boolean  @default(false)
   banner      String?
   createdAt   DateTime @default(now())
+
+  // Relation to Bookings
+  bookings    Booking[]
+}
+
+// NEW: Status Enum for Type Safety
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}
+
+// NEW: Appointment Model
+model Booking {
+  id            String        @id @default(cuid())
+  startDateTime DateTime
+  endDateTime   DateTime
+  customerName  String
+  customerEmail String
+  status        BookingStatus @default(PENDING)
+  
+  // Relation to Product (Must match Product.id type @db.Uuid)
+  productId     String        @db.Uuid
+  product       Product       @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@map("bookings")
 }

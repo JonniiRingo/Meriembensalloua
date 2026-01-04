@@ -1,0 +1,63 @@
+Phase 1: The Foundation (Database)
+Time: 30 Minutes Goal: Create the storage for appointments.
+
+Update schema.prisma:
+
+Add a Booking model.
+
+Fields: id, startDateTime, endDateTime, customerName, customerEmail, status (PENDING, CONFIRMED), productId (Relation to Product).
+
+Migration:
+
+Run npx prisma db push to sync.
+
+Phase 2: The "Brain" (Server Logic)
+Time: 2 Hours Goal: Prevent double-booking without complex logic.
+
+Hardcode Availability (MVP):
+
+Define "Business Hours" in a constant (e.g., M-F, 9am–5pm PST).
+
+Server Action: getAvailableSlots(date, productId):
+
+Input: A specific Date.
+
+Logic: Generate all 9am–5pm slots -> Query DB for existing bookings on that date -> Filter out the busy ones -> Return the free slots.
+
+Server Action: createBooking(data):
+
+Logic: Re-check availability (race condition safety) -> Create Record -> Trigger Email.
+
+Phase 3: The Interface (Frontend)
+Time: 3 Hours Goal: A clean UI using your existing Shadcn components.
+
+Calendar Component:
+
+Use <Calendar /> (Shadcn) to let user pick a date.
+
+Disable weekends and past dates.
+
+Time Slot Grid:
+
+When a date is picked, fire getAvailableSlots.
+
+Render valid times as <Button variant="outline" />.
+
+Guest Form:
+
+When a time is clicked, show a Dialog/Modal.
+
+Fields: Name, Email, Notes.
+
+"Confirm Booking" button fires createBooking.
+
+Phase 4: Integration
+Time: 1 Hour Goal: Connect the new system to your Product Pages.
+
+Product Page Update:
+
+Go to app/(root)/product/[slug]/page.tsx.
+
+Replace the static "Add to Cart" or "Buy" button with a "Book Session" button that opens your new Calendar component.
+
+Email Notification:

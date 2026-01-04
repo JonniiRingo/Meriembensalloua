@@ -4,6 +4,7 @@ import ProductPrice from '@/components/shared/product/product.price';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import { BookingCalendar } from '@/components/portfolio/booking-calendar'; 
 
 export default async function ProductDetailsPage(props: {
   params: Promise<{ slug: string }>;
@@ -11,10 +12,9 @@ export default async function ProductDetailsPage(props: {
   const { slug } = await props.params;
   const product = await getProductBySlug(slug);
 
-  // If the slug doesn't exist in the DB (Product table), trigger a 404
   if (!product) notFound();
 
-  // Ensure product has required fields
+  // Safety checks for data
   const productPrice = typeof product.price === 'string' ? parseFloat(product.price) : Number(product.price) || 0;
   const productImages = Array.isArray(product.images) && product.images.length > 0 ? product.images : ['/placeholder-image.png'];
   const productStock = typeof product.stock === 'number' ? product.stock : 0;
@@ -51,25 +51,29 @@ export default async function ProductDetailsPage(props: {
           </p>
         </div>
 
-        {/* Purchase Card */}
+        {/* Booking Card (Sticky) */}
         <div className="col-span-1">
-          <Card>
-            <CardContent className="p-6 flex flex-col gap-4">
-              <div className="flex justify-between">
-                <span>Price</span>
-                <ProductPrice value={productPrice} />
+          <Card className="sticky top-24">
+            <CardContent className="p-6 flex flex-col gap-6">
+              <div className="flex justify-between items-center">
+                <span className="font-semibold">Session Price</span>
+                <ProductPrice value={productPrice} className="text-xl" />
               </div>
-              <div className="flex justify-between">
-                <span>Status</span>
+              
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-muted-foreground">Availability</span>
                 <Badge variant={productStock > 0 ? 'default' : 'destructive'}>
-                  {productStock > 0 ? 'In Stock' : 'Out of Stock'}
+                  {productStock > 0 ? 'Instant Booking' : 'Fully Booked'}
                 </Badge>
               </div>
 
-              {/* NEXT STEP: This button will eventually link to the Cart or Checkout Action */}
-              <button className="w-full bg-primary text-primary-foreground py-3 rounded-md hover:opacity-90">
-                Proceed to Booking
-              </button>
+              {/* DYNAMIC CALENDAR */}
+              <div className="pt-4 border-t">
+                <p className="text-sm font-medium mb-4">Select a Date & Time:</p>
+                {/* We pass the Product ID so the DB knows what service is being booked */}
+                <BookingCalendar productId={product.id} />
+              </div>
+
             </CardContent>
           </Card>
         </div>
