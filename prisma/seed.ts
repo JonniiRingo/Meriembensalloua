@@ -1,16 +1,18 @@
 import { PrismaClient } from '@prisma/client';
 
 async function main() {
-  // We create a new instance INSIDE the function to force a fresh look at the schema
   const prisma = new PrismaClient();
   
   console.log('🌱 Starting Integrated Seed...');
 
-  // --- PART 1: RESEARCH DATA ---
+  // --- PART 1: RESEARCH DATA (Respondents) ---
   const areas = ['Urban Core', 'Suburban West', 'Coastal Region', 'Rural North', 'Industrial District'];
   const employment = ['Employed', 'Unemployed', 'Student', 'Retired'];
   const races = ['White', 'Black', 'Asian', 'Other', 'Mixed'];
   const genders = ['Male', 'Female'];
+  
+  // FIXED: Weighted array to simulate ~20% Long Covid rate (matches "approx 18%" in your text)
+  const covidOptions = ['Yes', 'No', 'No', 'No', 'No']; 
 
   const respondentData = [];
   for (let i = 0; i < 5020; i++) {
@@ -24,22 +26,23 @@ async function main() {
       maritalStatus: 'Single',
       genderBirth: genders[Math.floor(Math.random() * genders.length)],
       genderIdentity: genders[Math.floor(Math.random() * genders.length)],
-      covidLong: 'No',
+      covidLong: covidOptions[Math.floor(Math.random() * covidOptions.length)], // <--- RANDOMIZED
     });
   }
 
-  // Uncomment this line if you need to re-seed respondents, otherwise it might duplicate data 
-  // depending on your schema constraints. If you just want to seed products, comment this out.
-  await prisma.respondent.createMany({ data: respondentData });
-  console.log(`✅ Seeded ${respondentData.length} respondents.`);
+  // Clear old data to prevent duplicates (Optional, but safer for re-seeding)
+  // await prisma.respondent.deleteMany({}); 
 
-  // --- PART 2: BUSINESS DATA ---
+  await prisma.respondent.createMany({ data: respondentData });
+  console.log(`✅ Seeded ${respondentData.length} respondents with randomized health risks.`);
+
+  // --- PART 2: BUSINESS DATA (Products) ---
   console.log('🛒 Adding Service Tiers...');
   
   const products = [
     // --- Tutoring Services ---
     {
-      name: '1-on-1-Tutoring',
+      name: '1-on-1 Tutoring',
       slug: '1-on-1-tutoring',
       category: 'Tutoring Services',
       description: 'Personalized, one-on-one instruction focusing on Math, Python, or R. Includes problem-solving and guided practice.',
@@ -49,7 +52,7 @@ async function main() {
       images: ['/images/content/meriem_2.png'] 
     },
     {
-      name: '4-hour-Package',
+      name: '4-hour Package',
       slug: '4-hour-tutoring',
       category: 'Tutoring Services',
       description: 'Four 1-hour sessions with a custom learning plan, weekly progress tracking, and feedback between sessions.',
@@ -134,8 +137,6 @@ async function main() {
     }
   ];
 
-  // Using bracket notation safely to bypass the linter and the property error
-  // Updated loop to iterate over 'products' instead of 'services'
   for (const product of products) {
     const model = (prisma as any)['product'];
     if (model) {
