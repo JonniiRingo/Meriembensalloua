@@ -47,17 +47,17 @@ export function About() {
           <CredentialCard 
             icon={<GraduationCap className="w-8 h-8 text-[#2F5C4B]" />}
             title="USTHB"
-            desc="M.S. Mathematics"
+            desc="UCI TA in Data Science"
           />
           <CredentialCard 
             icon={<Award className="w-8 h-8 text-[#2F5C4B]" />}
             title="Data Science"
-            desc="Predictive Analytics"
+            desc="Data wrangling Pomona university "
           />
           <CredentialCard 
             icon={<Globe className="w-8 h-8 text-[#2F5C4B]" />}
             title="Research"
-            desc="Social Impact Study"
+            desc="Stanford university"
           />
           <CredentialCard 
             icon={<Users className="w-8 h-8 text-[#2F5C4B]" />}
