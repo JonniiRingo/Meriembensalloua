@@ -77,7 +77,6 @@ export default function PortfolioPage() {
               <CardHeader className="pb-4">
                 <div className="flex justify-between items-start mb-4">
                   <div className="p-3 bg-white rounded-xl shadow-sm">
-                    {/* Using a generic code/game icon, assuming lucide-react is installed */}
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#334155]">
                       <rect x="2" y="6" width="20" height="12" rx="2" />
                       <path d="M6 12h4" />
@@ -104,6 +103,12 @@ export default function PortfolioPage() {
                   <Badge variant="secondary" className="bg-white/60">Canvas API</Badge>
                   <Badge variant="secondary" className="bg-white/60">Game Physics</Badge>
                 </div>
+
+                <Button asChild className="w-full bg-[#334155] hover:bg-[#1e293b] text-white h-12 text-base rounded-xl transition-colors">
+                  <Link href="/portfolio/astroid">
+                    View Write-up <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 

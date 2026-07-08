@@ -2,9 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { ArrowLeft, Github } from "lucide-react";
+
 
 export default async function AstroidProject() {
   
@@ -32,16 +33,22 @@ export default async function AstroidProject() {
       </div>
 
       {/* INTERACTIVE DASHBOARD SECTION (Top) */}
-      <div className="max-w-7xl mx-auto mb-16">
-         {/* DUMMY LOGIC / PLACEHOLDER: 
-             If you have a live React/Canvas component of the game, 
-             or a screenshot gallery component, render it here.
-             <GameCanvasClient /> 
-         */}
-         <div className="w-full h-64 bg-slate-200 rounded-xl border-2 border-dashed border-slate-300 flex items-center justify-center text-slate-400">
-            [ Interactive Canvas / Project Visuals Placeholder ]
+    <div className="w-full max-w-2xl mx-auto aspect-video bg-slate-950 rounded-xl border-2 border-slate-200 overflow-hidden shadow-lg relative">
+           <video 
+             className="w-full h-full object-cover"
+             autoPlay 
+             loop 
+             muted 
+             playsInline
+           >
+             <source src="/assets/AsteroidsVideo.mp4" type="video/mp4" />
+             Your browser does not support the video tag.
+           </video>
+           
+           {/* Optional: A subtle overlay to make it look embedded in a monitor */}
+           <div className="absolute inset-0 bg-slate-900/10 pointer-events-none mix-blend-overlay border border-white/5 rounded-xl"></div>
          </div>
-      </div>
+
 
       {/* RESEARCH / WRITE-UP CONTENT SECTION (Bottom) */}
       <div className="max-w-7xl mx-auto">
@@ -82,6 +89,19 @@ export default async function AstroidProject() {
           </section>
         </div>
       </div>
+
+
+      <div className="fixed bottom-8 right-8 z-[9999]">
+        <Link href="https://github.com/mbensalloua/java-asteroids-game/tree/main" target="_blank" rel="noopener noreferrer">
+          <Button className="h-14 rounded-full shadow-xl bg-slate-900 hover:bg-slate-800 text-white flex items-center gap-2 px-8 transition-all hover:scale-105 hover:-translate-y-1">
+            <Github className="w-5 h-5" />
+            <span className="font-semibold text-sm tracking-wide">View Code</span>
+          </Button>
+        </Link>
+      </div>
+
     </main>
   );
 }
+
+
