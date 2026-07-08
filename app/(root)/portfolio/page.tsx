@@ -112,6 +112,120 @@ export default function PortfolioPage() {
               </CardContent>
             </Card>
 
+
+
+
+            {/* Cipher Project */}
+            <Card className="group relative overflow-hidden border-2 border-slate-200 bg-[#F8FAFC] hover:shadow-lg transition-all duration-300">
+              <CardHeader className="pb-4">
+                <div className="flex justify-between items-start mb-4">
+                  <div className="p-3 bg-white rounded-xl shadow-sm">
+                    {/* Security / Lock Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#334155]">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg>
+                  </div>
+                  <Badge className="bg-[#334155] hover:bg-[#1e293b]">Live Project</Badge>
+                </div>
+                <CardTitle className="text-2xl font-serif text-gray-900 group-hover:text-[#334155] transition-colors">
+                  Cryptographic Substitution Ciphers
+                </CardTitle>
+                <CardDescription className="text-base text-gray-600 mt-2">
+                  A Java-based encryption engine. Progresses from a foundational Caesar cipher to complex, rotating substitution keys designed to defeat frequency analysis attacks.
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  <Badge variant="secondary" className="bg-white/60">Java</Badge>
+                  <Badge variant="secondary" className="bg-white/60">Cryptography</Badge>
+                  <Badge variant="secondary" className="bg-white/60">OOP</Badge>
+                  <Badge variant="secondary" className="bg-white/60">File I/O</Badge>
+                </div>
+
+                <Button asChild className="w-full bg-[#334155] hover:bg-[#1e293b] text-white h-12 text-base rounded-xl transition-colors">
+                  <Link href="/portfolio/cipher">
+                    View Write-up <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Spelling Bee Project */}
+            <Card className="group relative overflow-hidden border-2 border-slate-200 bg-[#F8FAFC] hover:shadow-lg transition-all duration-300">
+              <CardHeader className="pb-4">
+                <div className="flex justify-between items-start mb-4">
+                  <div className="p-3 bg-white rounded-xl shadow-sm">
+                    {/* Hexagon / Beehive Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#334155]">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                    </svg>
+                  </div>
+                  <Badge className="bg-[#334155] hover:bg-[#1e293b]">Live Project</Badge>
+                </div>
+                <CardTitle className="text-2xl font-serif text-gray-900 group-hover:text-[#334155] transition-colors">
+                  Spelling Bee: Lexical Engine
+                </CardTitle>
+                <CardDescription className="text-base text-gray-600 mt-2">
+                  A Java-based recreation of the popular daily word puzzle. Features complex string validation, dictionary file parsing, dynamic scoring, and lambda-driven event listeners.
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  <Badge variant="secondary" className="bg-white/60">Java</Badge>
+                  <Badge variant="secondary" className="bg-white/60">Data Structures</Badge>
+                  <Badge variant="secondary" className="bg-white/60">File I/O</Badge>
+                  <Badge variant="secondary" className="bg-white/60">Lambda Functions</Badge>
+                </div>
+
+                <Button asChild className="w-full bg-[#334155] hover:bg-[#1e293b] text-white h-12 text-base rounded-xl transition-colors">
+                  <Link href="/portfolio/spelling">
+                    View Write-up <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Mountain Paths Project */}
+            <Card className="group relative overflow-hidden border-2 border-slate-200 bg-[#F8FAFC] hover:shadow-lg transition-all duration-300">
+              <CardHeader className="pb-4">
+                <div className="flex justify-between items-start mb-4">
+                  <div className="p-3 bg-white rounded-xl shadow-sm">
+                    {/* Mountain Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#334155]">
+                      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+                    </svg>
+                  </div>
+                  <Badge className="bg-[#334155] hover:bg-[#1e293b]">Live Project</Badge>
+                </div>
+                <CardTitle className="text-2xl font-serif text-gray-900 group-hover:text-[#334155] transition-colors">
+                  Mountain Paths: Topographic Routing
+                </CardTitle>
+                <CardDescription className="text-base text-gray-600 mt-2">
+                  A Java-based greedy algorithm implementation that processes vast 2D elevation datasets to calculate and visualize the path of least resistance across mountainous terrain.
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  <Badge variant="secondary" className="bg-white/60">Java</Badge>
+                  <Badge variant="secondary" className="bg-white/60">Greedy Algorithms</Badge>
+                  <Badge variant="secondary" className="bg-white/60">2D Arrays</Badge>
+                  <Badge variant="secondary" className="bg-white/60">Data Visualization</Badge>
+                </div>
+
+                <Button asChild className="w-full bg-[#334155] hover:bg-[#1e293b] text-white h-12 text-base rounded-xl transition-colors">
+                  <Link href="/portfolio/mountain">
+                    View Write-up <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+
+
             {/* PROJECT 2: Financial Modeling (Placeholder) */}
             <Card className="group relative overflow-hidden border border-gray-100 bg-white hover:shadow-md transition-all">
               <CardHeader className="pb-4">
@@ -142,9 +256,12 @@ export default function PortfolioPage() {
                 </Button>
               </CardContent>
             </Card>
+            
 
           </div>
         </section>
+
+        
 
         {/* 3. CONTACT BAR (Reused) */}
         <ContactBar />
