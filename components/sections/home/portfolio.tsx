@@ -35,7 +35,9 @@ export async function Portfolio() {
             </p>
           </div>
           <Button variant="outline" className="hidden md:flex gap-2">
-            View All Projects <ArrowRight className="w-4 h-4" />
+            <Link href='/portfolio'>
+              View All Projects <ArrowRight className="w-4 h-4" />
+            </Link>
           </Button>
         </div>
 
