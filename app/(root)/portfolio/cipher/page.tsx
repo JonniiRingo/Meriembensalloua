@@ -67,7 +67,7 @@ export default async function CipherProject() {
             </p>
             <p>
               However, relying on a static three-position shift is structurally vulnerable[cite: 183]. To solve this, the engine was heavily refactored using Object-Oriented principles to act as a <strong>Generalized Substitution Cipher</strong>. 
-              By injecting a custom 26-character string into the `Cipher` class constructor, the class dynamically maps the alphabet against roughly $4 \times 10^{26}$ possible key arrangements[cite: 191, 194, 195].
+              By injecting a custom 26-character string into the `Cipher` class constructor, the class dynamically maps the alphabet against roughly 4 &times; 10<sup>26</sup> possible key arrangements[cite: 191, 194, 195].
             </p>
             <p>
               Despite this vast key space, standard substitution ciphers remain susceptible to frequency analysis (e.g., identifying the most common character to deduce the letter 'e')[cite: 202, 203]. 
