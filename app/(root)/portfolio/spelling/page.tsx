@@ -25,11 +25,8 @@ export default async function SpellingBeeProject() {
         </div>
       </div>
 
-      {/* INTERACTIVE DASHBOARD SECTION (Top) */}
-      <div className="w-full max-w-2xl mx-auto aspect-video bg-slate-950 rounded-xl border-2 border-slate-200 overflow-hidden shadow-lg relative">
-           {/* DUMMY LOGIC / PLACEHOLDER: 
-               If you have a video of the Spelling Bee gameplay, place it in the assets folder and it will render here.
-           */}
+                  {/* INTERACTIVE DASHBOARD SECTION (Top) */}
+    <div className="w-full max-w-2xl mx-auto aspect-video bg-slate-950 rounded-xl border-2 border-slate-200 overflow-hidden shadow-lg relative">
            <video 
              className="w-full h-full object-cover"
              autoPlay 
@@ -37,12 +34,13 @@ export default async function SpellingBeeProject() {
              muted 
              playsInline
            >
-             <source src="/assets/SpellingBeeVideo.mp4" type="video/mp4" />
+             <source src="/assets/spelling.mp4" type="video/mp4" />
              Your browser does not support the video tag.
            </video>
            
+           {/* Optional: A subtle overlay to make it look embedded in a monitor */}
            <div className="absolute inset-0 bg-slate-900/10 pointer-events-none mix-blend-overlay border border-white/5 rounded-xl"></div>
-      </div>
+         </div>
 
       {/* RESEARCH / WRITE-UP CONTENT SECTION (Bottom) */}
       <div className="max-w-7xl mx-auto">

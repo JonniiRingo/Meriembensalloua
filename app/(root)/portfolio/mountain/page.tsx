@@ -27,19 +27,12 @@ export default async function MountainPathsProject() {
 
       {/* INTERACTIVE DASHBOARD SECTION (Top) */}
       <div className="w-full max-w-2xl mx-auto aspect-video bg-slate-950 rounded-xl border-2 border-slate-200 overflow-hidden shadow-lg relative">
-           {/* DUMMY LOGIC / PLACEHOLDER: 
-               If you have a video of the Mountain Paths visualizer generating the map/lines, place it in the assets folder.
-           */}
-           <video 
+           
+           <img 
+             src="/assets/drawingPanel.png" 
+             alt="Mountain Paths visualization"
              className="w-full h-full object-cover"
-             autoPlay 
-             loop 
-             muted 
-             playsInline
-           >
-             <source src="/assets/MountainPathsVideo.mp4" type="video/mp4" />
-             Your browser does not support the video tag.
-           </video>
+           />
            
            <div className="absolute inset-0 bg-slate-900/10 pointer-events-none mix-blend-overlay border border-white/5 rounded-xl"></div>
       </div>
