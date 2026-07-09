@@ -59,9 +59,9 @@ export default async function AstroidProject() {
           <section className="lg:col-span-5">
             <h2 className="text-xs font-bold tracking-[0.2em] text-slate-700 uppercase mb-4">Abstract</h2>
             <Card className="p-8 border-none bg-white shadow-sm italic font-serif text-lg text-slate-800">
-              The objective of this project was to reinvigorate the 1979 arcade classic, simulating the solitary journey of a ship through space[cite: 2, 3]. 
-              This was achieved by implementing a strict class hierarchy that separates game logic from rendering[cite: 14]. 
-              By designing custom physics algorithms for movement and refactoring distinct geometric entities into a unified, abstract architecture, the engine successfully processes continuous frames of animation, interactive keyboard listeners, and complex collision detection[cite: 16, 30, 58].
+              The objective of this project was to reinvigorate the 1979 arcade classic, simulating the solitary journey of a ship through space. 
+              This was achieved by implementing a strict class hierarchy that separates game logic from rendering. 
+              By designing custom physics algorithms for movement and refactoring distinct geometric entities into a unified, abstract architecture, the engine successfully processes continuous frames of animation, interactive keyboard listeners, and complex collision detection.
             </Card>
           </section>
 
@@ -69,22 +69,22 @@ export default async function AstroidProject() {
           <section className="lg:col-span-7 space-y-6">
             <h2 className="text-xs font-bold tracking-[0.2em] text-slate-400 uppercase">System Architecture</h2>
             <p>
-              The foundation of the engine relies on a continuous loop that calls a specialized paint method to draw the next frame of the game's animation on a coordinate system originating at the top-left of the window[cite: 8, 16]. 
-              This foundational rendering handles the visual output, but the true complexity lies within the underlying object-oriented design[cite: 21].
+              The foundation of the engine relies on a continuous loop that calls a specialized paint method to draw the next frame of the game's animation on a coordinate system originating at the top-left of the window. 
+              This foundational rendering handles the visual output, but the true complexity lies within the underlying object-oriented design[.
             </p>
             <p>
-              A core technical feature is the <strong>Vector-Based Physics System</strong>. To create a realistic zero-gravity acceleration effect, the system calculates an acceleration vector[cite: 42]. 
-              This vector determines the rate of increase across the X and Y axes at each time step, utilizing trigonometric functions (sine and cosine) combined with the ship's rotation to calculate smooth, continuous momentum[cite: 43, 48]. Furthermore, positional logic was implemented to seamlessly wrap objects around the screen boundaries when they travel out of bounds[cite: 39].
+              A core technical feature is the <strong>Vector-Based Physics System</strong>. To create a realistic zero-gravity acceleration effect, the system calculates an acceleration vector. 
+              This vector determines the rate of increase across the X and Y axes at each time step, utilizing trigonometric functions (sine and cosine) combined with the ship's rotation to calculate smooth, continuous momentum. Furthermore, positional logic was implemented to seamlessly wrap objects around the screen boundaries when they travel out of bounds.
             </p>
             <p>
-              Handling interactions required a robust <strong>Collision Detection</strong> mechanism. Initially, a boolean intersection method was designed to calculate overlaps strictly between Polygon objects[cite: 58, 59]. 
-              Because the protagonist Ship and the opponent Asteroids share similar geometric properties, abstracting their shared logic into a mutual Polygon class streamlined the rendering and intersection code[cite: 56, 71, 73].
+              Handling interactions required a robust <strong>Collision Detection</strong> mechanism. Initially, a boolean intersection method was designed to calculate overlaps strictly between Polygon objects. 
+              Because the protagonist Ship and the opponent Asteroids share similar geometric properties, abstracting their shared logic into a mutual Polygon class streamlined the rendering and intersection code.
             </p>
             <p>
-              However, the introduction of environmental elements like Stars and interactive projectiles like Bullets required a systemic pivot, as neither are polygons; both are circles[cite: 89, 94]. To handle these new data types, a parallel Circle class was constructed, focusing on point-containment logic[cite: 96, 99, 100].
+              However, the introduction of environmental elements like Stars and interactive projectiles like Bullets required a systemic pivot, as neither are polygons; both are circles. To handle these new data types, a parallel Circle class was constructed, focusing on point-containment logic.
             </p>
             <p className="font-bold text-slate-900 border-t border-slate-100 pt-4">
-              To resolve the conflict of calculating intersections across disparate geometric types, the architecture was heavily refactored using polymorphism[cite: 126]. A generalized superclass, Shape, was introduced to govern both Polygons and Circles[cite: 124]. This abstraction allowed the game loop to globally process spatial intersections without needing discrete methods for every possible shape variation, resulting in a highly scalable and resilient codebase[cite: 122, 123, 125].
+              To resolve the conflict of calculating intersections across disparate geometric types, the architecture was heavily refactored using polymorphism. A generalized superclass, Shape, was introduced to govern both Polygons and Circles. This abstraction allowed the game loop to globally process spatial intersections without needing discrete methods for every possible shape variation, resulting in a highly scalable and resilient codebase.
             </p>
           </section>
         </div>

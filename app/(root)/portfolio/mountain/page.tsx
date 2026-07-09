@@ -46,8 +46,8 @@ export default async function MountainPathsProject() {
           <section className="lg:col-span-5">
             <h2 className="text-xs font-bold tracking-[0.2em] text-slate-700 uppercase mb-4">Abstract</h2>
             <Card className="p-8 border-none bg-white shadow-sm italic font-serif text-lg text-slate-800">
-              The objective of this project was to ingest raw topographic land elevation data into a 2D array and compute the most efficient way to travel over the terrain[cite: 360, 366]. 
-              The application processes these vast datasets to calculate a "greedy lowest-elevation-change walk" from the western side of the map to the eastern side, acting as a calculated path of least resistance[cite: 367, 368].
+              The objective of this project was to ingest raw topographic land elevation data into a 2D array and compute the most efficient way to travel over the terrain. 
+              The application processes these vast datasets to calculate a "greedy lowest-elevation-change walk" from the western side of the map to the eastern side, acting as a calculated path of least resistance.
             </Card>
           </section>
 
@@ -55,16 +55,16 @@ export default async function MountainPathsProject() {
           <section className="lg:col-span-7 space-y-6">
             <h2 className="text-xs font-bold tracking-[0.2em] text-slate-400 uppercase">System Architecture</h2>
             <p>
-              The application begins with robust <strong>Data Ingestion</strong>. The program processes a large dataset consisting of 403,200 integers representing a 480-row by 844-column grid[cite: 457]. It utilizes Java's `Scanner` to parse the continuous stream of space-separated integers, mapping them precisely into a 2D array in row-major order[cite: 450, 461].
+              The application begins with robust <strong>Data Ingestion</strong>. The program processes a large dataset consisting of 403,200 integers representing a 480-row by 844-column grid. It utilizes Java's `Scanner` to parse the continuous stream of space-separated integers, mapping them precisely into a 2D array in row-major order.
             </p>
             <p>
-              To render the map via <strong>Data Visualization</strong>, the engine identifies the absolute minimum and maximum elevations present in the 2D array[cite: 468]. It then scales each integer to a proportionate grayscale value between 0 (black) and 255 (white), allowing the topographic data to be drawn dynamically as filled rectangles mapped to x,y coordinates[cite: 478, 481, 482].
+              To render the map via <strong>Data Visualization</strong>, the engine identifies the absolute minimum and maximum elevations present in the 2D array. It then scales each integer to a proportionate grayscale value between 0 (black) and 255 (white), allowing the topographic data to be drawn dynamically as filled rectangles mapped to x,y coordinates.
             </p>
             <p>
-              Pathfinding is governed by a <strong>Greedy Algorithm</strong>, meaning the system makes the most optimal local choice at each individual step[cite: 372]. Starting from the left edge, the path steps into one of three adjacent cells in the next column (forward, forward-up, or forward-down), always selecting the cell whose elevation is closest to the current standing position[cite: 374, 381]. Tie-breakers are resolved by defaulting to a straight-forward step or utilizing a randomized coin flip[cite: 383, 384].
+              Pathfinding is governed by a <strong>Greedy Algorithm</strong>, meaning the system makes the most optimal local choice at each individual step. Starting from the left edge, the path steps into one of three adjacent cells in the next column (forward, forward-up, or forward-down), always selecting the cell whose elevation is closest to the current standing position. Tie-breakers are resolved by defaulting to a straight-forward step or utilizing a randomized coin flip.
             </p>
             <p className="font-bold text-slate-900 border-t border-slate-100 pt-4">
-              To determine the absolute most efficient route, the system evaluates optimization metrics. It uses absolute values to track the cumulative elevation changes experienced across a given path[cite: 507, 509]. By iterating through every possible starting row (0 to 480) on the western edge, the algorithm identifies and highlights the single lowest-elevation-change path across the entire map[cite: 513, 515].
+              To determine the absolute most efficient route, the system evaluates optimization metrics. It uses absolute values to track the cumulative elevation changes experienced across a given path. By iterating through every possible starting row (0 to 480) on the western edge, the algorithm identifies and highlights the single lowest-elevation-change path across the entire map.
             </p>
           </section>
         </div>

@@ -51,8 +51,8 @@ export default async function SpellingBeeProject() {
           <section className="lg:col-span-5">
             <h2 className="text-xs font-bold tracking-[0.2em] text-slate-700 uppercase mb-4">Abstract</h2>
             <Card className="p-8 border-none bg-white shadow-sm italic font-serif text-lg text-slate-800">
-              The objective of this project was to implement an interactive puzzle application that allows users to construct words from a seven-letter beehive layout[cite: 223, 226]. 
-              The engine validates user input against a standard English dictionary, enforcing strict rules such as minimum word length, specific character constraints, and mandatory inclusion of a designated center letter[cite: 235, 236, 238, 240].
+              The objective of this project was to implement an interactive puzzle application that allows users to construct words from a seven-letter beehive layout. 
+              The engine validates user input against a standard English dictionary, enforcing strict rules such as minimum word length, specific character constraints, and mandatory inclusion of a designated center letter.
             </Card>
           </section>
 
@@ -60,18 +60,18 @@ export default async function SpellingBeeProject() {
           <section className="lg:col-span-7 space-y-6">
             <h2 className="text-xs font-bold tracking-[0.2em] text-slate-400 uppercase">System Architecture</h2>
             <p>
-              The application architecture is built upon robust string processing and file I/O operations in Java[cite: 222]. To determine if a user's inputted word is legal, the program parses a text-based English dictionary into a searchable data structure[cite: 240, 304]. It then iterates through this dataset, checking each entry against rigorous constraints to ensure no forbidden letters are used[cite: 297, 299].
+              The application architecture is built upon robust string processing and file I/O operations in Java. To determine if a user's inputted word is legal, the program parses a text-based English dictionary into a searchable data structure. It then iterates through this dataset, checking each entry against rigorous constraints to ensure no forbidden letters are used.
             </p>
             <p>
-              A core technical feature is the implementation of <strong>Event-Driven Interactivity</strong>. The system utilizes callback functions and Java arrow (lambda) functions to handle user interactions dynamically[cite: 274, 277]. 
-              When a user submits a puzzle string or a guessed word, these lambda functions route the input directly to processing methods, executing operations on the client's behalf without stalling the application[cite: 268, 269, 282].
+              A core technical feature is the implementation of <strong>Event-Driven Interactivity</strong>. The system utilizes callback functions and Java arrow (lambda) functions to handle user interactions dynamically. 
+              When a user submits a puzzle string or a guessed word, these lambda functions route the input directly to processing methods, executing operations on the client's behalf without stalling the application.
             </p>
             <p>
-              To evaluate valid words, a <strong>Dynamic Scoring Algorithm</strong> was engineered[cite: 311]. Words containing exactly four letters yield a baseline of one point, while longer words score proportionally to their character count[cite: 311]. 
-              Furthermore, a bonus system was implemented to detect "pangrams"—words utilizing all seven available letters—awarding an additional seven points and highlighting them in the UI[cite: 251, 312, 315].
+              To evaluate valid words, a <strong>Dynamic Scoring Algorithm</strong> was engineered. Words containing exactly four letters yield a baseline of one point, while longer words score proportionally to their character count. 
+              Furthermore, a bonus system was implemented to detect "pangrams"—words utilizing all seven available letters—awarding an additional seven points and highlighting them in the UI.
             </p>
             <p className="font-bold text-slate-900 border-t border-slate-100 pt-4">
-              As the application scaled from an auto-solver to an interactive user-driven game, the codebase required strategic refactoring[cite: 317, 349]. The scoring logic was modularized into separate, callable functions, ensuring the game state, scores, and dictionary validations updated dynamically after every individual user submission[cite: 346, 348].
+              As the application scaled from an auto-solver to an interactive user-driven game, the codebase required strategic refactoring. The scoring logic was modularized into separate, callable functions, ensuring the game state, scores, and dictionary validations updated dynamically after every individual user submission.
             </p>
           </section>
         </div>
