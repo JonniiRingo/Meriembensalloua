@@ -25,22 +25,22 @@ export default async function CipherProject() {
         </div>
       </div>
 
-      {/* INTERACTIVE DASHBOARD SECTION (Top) */}
-      <div className="w-full max-w-4xl mx-auto aspect-video bg-slate-900 rounded-xl border-2 border-slate-700 overflow-hidden shadow-lg relative flex items-center justify-center font-mono text-green-400 p-8">
-         {/* DUMMY LOGIC / PLACEHOLDER: 
-             If you have a video of the terminal executing the Java code, replace this entire div with the <video> tag block used in the Asteroids project.
-         */}
-         <div className="text-left w-full h-full flex flex-col justify-start pt-4">
-            <p className="opacity-70">{">"} java Encrypt file.txt</p>
-            <p className="opacity-70">{">"} Initializing cipher...</p>
-            <p className="mt-2 text-green-300">{"[ENCODED OUTPUT]"}</p>
-            <p className="mt-2 opacity-50 break-all text-sm">
-              Pqcq egrt... 
-              vjg swkem dtqyp hqz lworq xcp...
-            </p>
+            {/* INTERACTIVE DASHBOARD SECTION (Top) */}
+    <div className="w-full max-w-2xl mx-auto aspect-video bg-slate-950 rounded-xl border-2 border-slate-200 overflow-hidden shadow-lg relative">
+           <video 
+             className="w-full h-full object-cover"
+             autoPlay 
+             loop 
+             muted 
+             playsInline
+           >
+             <source src="/assets/cipher.mp4" type="video/mp4" />
+             Your browser does not support the video tag.
+           </video>
+           
+           {/* Optional: A subtle overlay to make it look embedded in a monitor */}
+           <div className="absolute inset-0 bg-slate-900/10 pointer-events-none mix-blend-overlay border border-white/5 rounded-xl"></div>
          </div>
-         <div className="absolute inset-0 bg-slate-900/20 pointer-events-none mix-blend-overlay border border-white/5 rounded-xl"></div>
-      </div>
 
 
       {/* RESEARCH / WRITE-UP CONTENT SECTION (Bottom) */}
