@@ -25,6 +25,7 @@ export function Hero() {
           src="/assets/stanford-bg2.jpg" 
           alt="Stanford Campus" 
           fill
+          sizes="100vw"
           className="object-cover brightness-75"
           priority
         />
@@ -36,6 +37,7 @@ export function Hero() {
               src="/assets/meriem-profile2.png" 
               alt="Meriem Bensalloua" 
               fill
+              sizes="(max-width: 768px) 160px, 224px"
               className="object-cover"
             />
           </div>

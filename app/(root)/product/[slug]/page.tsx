@@ -21,9 +21,9 @@ export default async function ProductDetailsPage(props: {
 
   return (
     <section className="container mx-auto py-20 px-6">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         {/* Images Column */}
-        <div className="col-span-2">
+        <div className="col-span-4">
           <Image 
             src={productImages[0]} 
             alt={product.name || 'Product image'} 
@@ -34,7 +34,7 @@ export default async function ProductDetailsPage(props: {
         </div>
 
         {/* Details Column */}
-        <div className="col-span-2 flex flex-col gap-6">
+        <div className="md:col-span-3 flex flex-col gap-6">
           <div>
             <p className="text-sm uppercase tracking-widest text-muted-foreground">
               {product.brand || 'Brand'}
@@ -52,7 +52,7 @@ export default async function ProductDetailsPage(props: {
         </div>
 
         {/* Booking Card (Sticky) */}
-        <div className="col-span-1">
+        <div className="md:col-span-5">
           <Card className="sticky top-24">
             <CardContent className="p-6 flex flex-col gap-6">
               <div className="flex justify-between items-center">
