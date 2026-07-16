@@ -33,12 +33,18 @@ export function About() {
             Bridging the gap between <span className="text-green-200">Theory</span> and <span className="text-green-200">Practice</span>.
           </h2>
           <p className="text-lg text-green-50/90 leading-relaxed">
-            I am a Data Scientist and Educator with a passion for uncovering the stories hidden within data. 
-            With a Master's from USTHB and a background in Mathematics, I specialize in translating complex analytical concepts into actionable insights.
+            I am a Data Scientist and Educator with a passion for uncovering the 
+            stories hidden within data. With a <strong>Master’s degree in Mathematics 
+            and a Bachelor’s degree in Statistics from USTHB</strong>, along with 
+            <strong>Data Science certificates from the University of California, 
+            Irvine (UCI) and Cal Poly Pomona</strong>, I specialize in translating 
+            complex analytical concepts into actionable insights.
+
           </p>
           <p className="text-lg text-green-50/90 leading-relaxed">
-            Whether I am building predictive models or mentoring the next generation of engineers, 
-            my goal remains the same: to empower others through knowledge.
+            Whether I am building predictive models, conducting data-driven research, 
+            or mentoring the next generation of engineers and data professionals, my goal 
+            remains the same: to empower others through knowledge and practical application.
           </p>
         </div>
 
