@@ -52,8 +52,8 @@ export function About() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <CredentialCard 
             icon={<GraduationCap className="w-8 h-8 text-[#2F5C4B]" />}
-            title="USTHB"
-            desc="UCI TA in Data Science"
+            title="USTHB/ UCI"
+            desc="MS in Mathematics/ TA in Data Science "
           />
           <CredentialCard 
             icon={<Award className="w-8 h-8 text-[#2F5C4B]" />}

@@ -30,8 +30,11 @@ export async function Portfolio() {
           <div className="max-w-2xl">
             <h2 className="text-4xl font-serif text-slate-800 mb-4">Selected Work</h2>
             <p className="text-slate-600">
-              A collection of data science projects, full-stack applications, and research papers.
-              Focusing on high-impact visualization and proprietary algorithms.
+              Explore a collection of data science projects, software applications, 
+              and research initiatives featuring <strong>Python, SQL, Java, statistical 
+              analysis, and data visualization. </strong> These projects demonstrate my 
+              ability to combine programming, mathematics, and data-driven methods to solve 
+              real-world problems.
             </p>
           </div>
           <Button variant="outline" className="hidden md:flex gap-2">

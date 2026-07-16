@@ -26,7 +26,7 @@ export default function ContactPage() {
     },
     {
       label: "Instagram",
-      href: "https://www.instagram.com/ben202625/", // Update with real URL
+      href: "https://www.instagram.com/datascience.mb/", // Update with real URL
       icon: Instagram,
       color: "bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:opacity-90", // Insta Gradient
     },
