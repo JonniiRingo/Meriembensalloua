@@ -43,10 +43,10 @@ export function Hero() {
           </div>
           
           <div className="bg-white/7 backdrop-blur-md border border-white/40 px-8 py-6 rounded-2xl shadow-2xl text-center max-w-4xl mx-4 ring-1 ring-black/5">
-            <h1 className="text-3xl md:text-5xl font-serif text-slate-900 mb-2 drop-shadow-sm">
+            <h1 className="text-3xl md:text-5xl font-serif text-white mb-2 drop-shadow-sm">
               Meriem Bensalloua M.S. in Mathematics
             </h1>
-            <p className="text-lg md:text-xl text-slate-800 font-semibold tracking-wide">
+            <p className="text-lg md:text-xl text-white font-semibold tracking-wide">
               Educator | Mentor | Data Scientist
             </p>
           </div>
@@ -57,9 +57,13 @@ export function Hero() {
       {/* Intro Text & CTAs */}
       <div className="relative z-10 max-w-3xl mx-auto text-center mt-12 px-6 space-y-6">
         <p className="text-lg text-slate-600 leading-relaxed">
-          As an educator and mentor, I make data science and education accessible to all. 
-          From remote learning support to exploring human stories through data analytics, 
-          I'm here to guide, inspire, and empower. Let's turn data into insights together.
+          As an Educator, Mentor, and Data Scientist, I help students, researchers, 
+          and professionals build confidence in data science, statistics, and 
+          analytics. Through personalized mentoring, practical learning, and 
+          data-driven research, I transform complex data into meaningful insights 
+          that support informed decision-making. Whether you're learning new skills, 
+          analyzing data, or advancing a research project, I'm here to guide you every 
+          step of the way.
         </p>
         
         <div className="flex justify-center gap-4">
