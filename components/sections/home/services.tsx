@@ -55,7 +55,12 @@ export function Services() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif text-slate-800 mb-4">Tutoring Services</h2>
-          <p className="text-slate-600">Guidance in data analytics and applied machine learning — helping you develop the skills needed to excel.</p>
+          <p className="text-slate-600">Personalized support in <strong>mathematics, 
+            statistics, programming, and data science </strong>. I help students build 
+            strong foundations in subjects such as calculus, statistics, Python, SQL, 
+            and data analytics while developing the confidence and skills needed for 
+            academic and professional success.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
