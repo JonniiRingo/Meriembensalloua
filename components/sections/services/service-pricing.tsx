@@ -108,7 +108,7 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-              <Link href="/product/4-hour-tutoring">
+              <Link href="/product/fully-customized-tutoring">
                 <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
                   Get Started
                 </Button>
