@@ -44,11 +44,12 @@ export function Hero() {
           
           <div className="bg-white/7 backdrop-blur-md border border-white/40 px-8 py-6 rounded-2xl shadow-2xl text-center max-w-4xl mx-4 ring-1 ring-black/5">
             <h1 className="text-3xl md:text-5xl font-serif text-white mb-2 drop-shadow-sm">
-              Meriem Bensalloua M.S. in Mathematics
+              Meriem Bensalloua
             </h1>
             <p className="text-lg md:text-xl text-white font-semibold tracking-wide">
-              Educator | Mentor | Data Scientist
+              Data Scientist | Educator | Mentor
             </p>
+            <p className="text-lg md:text-xl text-white font-semibold tracking-wide" > M.S. in Discrete Mathematics & Optimization | B.S. in Statistics </p>
           </div>
 
         </div>

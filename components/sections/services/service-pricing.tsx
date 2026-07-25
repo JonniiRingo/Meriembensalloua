@@ -24,7 +24,8 @@ export function ServicePricing() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-serif font-medium text-gray-900 mb-4">Tutoring Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Guidance in data analytics and applied machine learning — helping you develop the skills needed to excel.
+              Personalized support in <strong>mathematics, statistics, programming, and data science</strong>.  I help students build strong foundations in subjects such as calculus, statistics, Python, SQL, and data analytics while developing the confidence and skills needed for academic and professional success.
+
             </p>
           </div>
 
@@ -107,9 +108,11 @@ export function ServicePricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
-                Get Started
-              </Button>
+              <Link href="/product/4-hour-tutoring">
+                <Button className="w-full bg-[#2F4F4F] hover:bg-[#1a2e2e] text-white py-6 rounded-xl">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
